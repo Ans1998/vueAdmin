@@ -1,24 +1,24 @@
 # vue-admin
 
 
-## ÏîÄ¿¼¼ÊõÕ»
+## é¡¹ç›®æŠ€æœ¯æ ˆ
 
-> vue-cli3¡¢vue-echarts¡¢vue-router¡¢element-ui¡¢echarts-gl¡¢photo-sphere-viewer£¨Õâ¸ö¿´package.json¾Í¿ÉÒÔÁË£©
+> vue-cli3ã€vue-echartsã€vue-routerã€element-uiã€echarts-glã€photo-sphere-viewerï¼ˆè¿™ä¸ªçœ‹package.jsonå°±å¯ä»¥äº†ï¼‰
 
-> ÏîÄ¿ÑİÊ¾
-![image](https://github.com/Aliceco/vueAdmin/src/assets/img/gtAWVDyZts.gif)
+> é¡¹ç›®æ¼”ç¤º
+![image](https://github.com/Aliceco/vueAdmin/tree/master/src/assets/img/gtAWVDyZts.gif)
 
-## °²×°
+## å®‰è£…
 ```
 yarn install
 ```
 
-### ÔËĞĞ
+### è¿è¡Œ
 ```
 yarn run serve
 ```
 
-### ´ò°ü
+### æ‰“åŒ…
 ```
 yarn run build
 ```
