@@ -8,6 +8,8 @@
 > 项目演示
 
  ![项目演示](https://github.com/Aliceco/vueAdmin/tree/master/src/assets/img/gtAWVDyZts.gif)
+ 
+ ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
 
 ## 安装
 ```
