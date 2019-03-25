@@ -1,29 +1,24 @@
 # vue-admin
 
-## Project setup
+
+## 项目技术栈
+
+> vue-cli3、vue-echarts、vue-router、element-ui、echarts-gl、photo-sphere-viewer（这个看package.json就可以了）
+
+> 项目演示
+![image](https://github.com/Aliceco/vueAdmin/src/assets/img/gtAWVDyZts.gif)
+
+## 安装
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 运行
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 yarn run build
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
