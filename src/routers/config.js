@@ -1,27 +1,28 @@
-import App from '../App'
+import App from '@/App'
+import Layout from '@/layout/index'
 /**
  * auth true登录才能访问，false不需要登录
  * keepAlive true缓存，false不缓存
  */
 export default [
     {
+        path: '/login', // 登录
+        meta: { auth: false, keepAlive: false },
+        component: resolve => require(['@/views/login/'], resolve)
+    },
+    {
+        path: '/register', // 注册
+        meta: { auth: false, keepAlive: false },
+        component: resolve => require(['@/views/register/'], resolve)
+    },
+    {
         path: '/',
-        component: App,
+        component: Layout,
         children: [
             {
                 path: '/', // 首页
                 meta: { auth: true, keepAlive: true },
                 component: resolve => require(['@/views/home/'], resolve)
-            },
-            {
-                path: '/login', // 登录
-                meta: { auth: false, keepAlive: false },
-                component: resolve => require(['@/views/login/'], resolve)
-            },
-            {
-                path: '/register', // 注册
-                meta: { auth: false, keepAlive: false },
-                component: resolve => require(['@/views/register/'], resolve)
             },
             {
                 path: '/user/index', // 用户列表

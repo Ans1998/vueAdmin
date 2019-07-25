@@ -6,57 +6,42 @@
 </style>
 <template>
     <div>
-        <el-container>
-            <el-container>
-                <el-aside>
-                    <leftNavigation></leftNavigation>
-                </el-aside>
-                <el-container>
-                    <el-header style="text-align: right; font-size: 12px;">
-                        <headNavigation></headNavigation>
-                    </el-header>
-                    <el-main>
-                        <!--mnin-->
-                        <el-row>
-                            <el-col :span="12">
-                                <div class="grid-content bg-purple">
-                                    <!--柱状图-->
-                                    <v-chart :options="polar" style="width: 500px; height: 300px"/>
-                                </div>
-                            </el-col>
-                            <el-col :span="12">
-                                <div class="grid-content bg-purple-light">
-                                    <v-chart :options="polarLine" style="width: 300px; height: 300px"/>
-                                </div>
-                            </el-col>
-                        </el-row>
-                        <el-row>
-                            <el-col :span="12">
-                                <div class="grid-content bg-purple">
-                                    <!--折线图-->
-                                    <v-chart :options="polarSeries" style="width: 500px; height: 300px"/>
-                                </div>
-                            </el-col>
-                            <el-col :span="12">
-                                <div class="grid-content bg-purple-light">
-                                    <!--饼图-->
-                                    <v-chart :options="polarRadius" style="width: 350px; height: 300px"/>
-                                </div>
-                            </el-col>
-                        </el-row>
-                        <el-row>
-                            <el-col :span="12">
-                                <div class="grid-content bg-purple">
-                                    <!--散点图-->
-                                    <v-chart :options="polarScatter" style="width: 500px; height: 300px"/>
-                                </div>
-                            </el-col>
-                        </el-row>
-                        <!--end main-->
-                    </el-main>
-                </el-container>
-            </el-container>
-        </el-container>
+        <!--mnin-->
+        <el-row>
+            <el-col :span="12">
+                <div class="grid-content bg-purple">
+                    <!--柱状图-->
+                    <v-chart :options="polar" style="width: 500px; height: 300px"/>
+                </div>
+            </el-col>
+            <el-col :span="12">
+                <div class="grid-content bg-purple-light">
+                    <v-chart :options="polarLine" style="width: 300px; height: 300px"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="12">
+                <div class="grid-content bg-purple">
+                    <!--折线图-->
+                    <v-chart :options="polarSeries" style="width: 500px; height: 300px"/>
+                </div>
+            </el-col>
+            <el-col :span="12">
+                <div class="grid-content bg-purple-light">
+                    <!--饼图-->
+                    <v-chart :options="polarRadius" style="width: 350px; height: 300px"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="12">
+                <div class="grid-content bg-purple">
+                    <!--散点图-->
+                    <v-chart :options="polarScatter" style="width: 500px; height: 300px"/>
+                </div>
+            </el-col>
+        </el-row>
     </div>
 </template>
 

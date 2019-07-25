@@ -1,28 +1,14 @@
 <template>
     <div>
-        <el-container>
-            <el-container>
-                <el-aside>
-                    <leftNavigation></leftNavigation>
-                </el-aside>
-                <el-container>
-                    <el-header style="text-align: right; font-size: 12px;">
-                        <headNavigation></headNavigation>
-                    </el-header>
-                    <el-main>
-                        <el-row>
-                            <el-col :span="24">
-                                <div class="grid-content bg-purple">
-                                    <div class="echarts">
-                                        <div :style="{height:'600px',width:'100%'}" ref="myEchart"></div>
-                                    </div>
-                                </div>
-                            </el-col>
-                        </el-row>
-                    </el-main>
-                </el-container>
-            </el-container>
-        </el-container>
+        <el-row>
+            <el-col :span="24">
+                <div class="grid-content bg-purple">
+                    <div class="echarts">
+                        <div :style="{height:'600px',width:'100%'}" ref="myEchart"></div>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
     </div>
 </template>
 

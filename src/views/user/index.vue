@@ -1,70 +1,56 @@
 <template>
     <div>
-        <el-container>
-            <el-container>
-                <el-aside>
-                    <leftNavigation></leftNavigation>
-                </el-aside>
-                <el-container>
-                    <el-header style="text-align: right; font-size: 12px;">
-                        <headNavigation></headNavigation>
-                    </el-header>
-                    <el-main>
-                        <el-table
-                                :data="tableData.filter(data => !search || data.userName.toLowerCase().includes(search.toLowerCase()))"
-                                style="width: 100%">
-                            <el-table-column
-                                    label="user ID"
-                                    prop="userId">
-                            </el-table-column>
-                            <el-table-column
-                                    label="用户名"
-                                    prop="userName">
-                            </el-table-column>
-                            <el-table-column
-                                    label="昵称"
-                                    prop="nickName">
-                            </el-table-column>
-                            <el-table-column
-                                    label="总余额"
-                                    prop="sumBalance">
-                            </el-table-column>
-                            <el-table-column
-                                    label="居住地"
-                                    prop="address">
-                            </el-table-column>
-                            <el-table-column
-                                    align="right">
-                                <template slot="header" slot-scope="scope">
-                                    <el-input
-                                            v-model="search"
-                                            size="mini"
-                                            placeholder="输入关键字搜索"/>
-                                </template>
-                                <template slot-scope="scope">
-                                    <el-button
-                                            size="mini"
-                                            @click="handleEdit(scope.$index, scope.row)">修改</el-button>
-                                    <el-button
-                                            size="mini"
-                                            type="danger"
-                                            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
-                                </template>
-                            </el-table-column>
-                        </el-table>
-                        <el-pagination
-                                @size-change="handleSizeChange"
-                                @current-change="handleCurrentChange"
-                                :current-page="currentPage"
-                                :page-sizes="[1, 2, 3, 4]"
-                                :page-size="1"
-                                layout="total, sizes, prev, pager, next, jumper"
-                                :total="4">
-                        </el-pagination>
-                    </el-main>
-                </el-container>
-            </el-container>
-        </el-container>
+        <el-table
+                :data="tableData.filter(data => !search || data.userName.toLowerCase().includes(search.toLowerCase()))"
+                style="width: 100%">
+            <el-table-column
+                    label="user ID"
+                    prop="userId">
+            </el-table-column>
+            <el-table-column
+                    label="用户名"
+                    prop="userName">
+            </el-table-column>
+            <el-table-column
+                    label="昵称"
+                    prop="nickName">
+            </el-table-column>
+            <el-table-column
+                    label="总余额"
+                    prop="sumBalance">
+            </el-table-column>
+            <el-table-column
+                    label="居住地"
+                    prop="address">
+            </el-table-column>
+            <el-table-column
+                    align="right">
+                <template slot="header" slot-scope="scope">
+                    <el-input
+                            v-model="search"
+                            size="mini"
+                            placeholder="输入关键字搜索"/>
+                </template>
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handleEdit(scope.$index, scope.row)">修改</el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="[1, 2, 3, 4]"
+                :page-size="1"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="4">
+        </el-pagination>
     </div>
 </template>
 
