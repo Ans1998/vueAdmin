@@ -14,8 +14,12 @@ import { publicFunction } from './plugins/index'
 // 注册为全局组件
 import registerAsGlobal from './components/index'
 
+import formCreate from '@form-create/element-ui'
+
+
 Vue.config.productionTip = false
 
+Vue.use(formCreate)
 Vue.use(ElementUI)
 Vue.use(publicFunction)
 Vue.use(registerAsGlobal)

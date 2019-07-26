@@ -667,6 +667,30 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@form-create/core@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@form-create/core/-/core-1.0.0.tgz#8ce6390678b00706f31476dd48bb7709b1a77c04"
+  integrity sha512-n83vx/9tAC3xkLUrSnHEbwuyv38oZH4eIA1OaujVMW3bfSmOB9qjcgmny9h6HL+S6qurjvNvbKAjpgBkCUN3Ew==
+  dependencies:
+    "@form-create/utils" "^1.0.0"
+    vue "^2.6.10"
+
+"@form-create/element-ui@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@form-create/element-ui/-/element-ui-1.0.0.tgz#18e398bd68355a119daf8fb8906accb1d279d59b"
+  integrity sha512-SF/rQ3jotkSEgjGd6Of6WFWzJAEO2BPtiGEWgHcMRwH4TSQenOES49GdU+t4sKh29INZh88UpIhuRoWNYO09Yg==
+  dependencies:
+    "@form-create/core" "^1.0.0"
+    "@form-create/utils" "^1.0.0"
+    element-ui "^2.8.2"
+
+"@form-create/utils@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@form-create/utils/-/utils-1.0.0.tgz#6e9e3a0e7063db15d8ae4eb85767ed6a52d0aac0"
+  integrity sha512-1dyh3ICLyNQH/GCW1HSlp/qAXT+3p8wnU6OfbsTYjv9HZgXiitrGFkBsI/+53fzWlcFEXxr3pPxSNVdJ8EEtIQ==
+  dependencies:
+    vue "^2.5.2"
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "http://registry.npm.taobao.org/@intervolga/optimize-cssnano-plugin/download/@intervolga/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -2833,6 +2857,18 @@ element-ui@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.6.1.tgz#86db79ff5de9b1bcc3187b65b3772b0c54074718"
   integrity sha512-Jm0sw0sxVrR6KzSMgymrDP1v+V8U+pn9IgdpHHhgjSLRM6foM05u6RsRUjy3jbuQmEYov1t8yLwqhDgDBvCIyw==
+  dependencies:
+    async-validator "~1.8.1"
+    babel-helper-vue-jsx-merge-props "^2.0.0"
+    deepmerge "^1.2.0"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.0"
+    throttle-debounce "^1.0.1"
+
+element-ui@^2.8.2:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.11.0.tgz#4e8bb208389785b6f2215c5ffdf6431ddc017c9d"
+  integrity sha512-zW0yM5jRERZ3gx+Drr7AjDpVBYF1DbwwGZxFcyPX5358FJiv04i3s8MNAAMWErHLysoydxAJrFeqkYjw3+zppg==
   dependencies:
     async-validator "~1.8.1"
     babel-helper-vue-jsx-merge-props "^2.0.0"
@@ -7756,6 +7792,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
+
+vue@^2.5.2, vue@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
 vue@^2.6.6:
   version "2.6.8"

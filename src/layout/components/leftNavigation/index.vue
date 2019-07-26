@@ -29,6 +29,10 @@
             <i class="el-icon-goods"></i>
             <span slot="title">订单管理</span>
         </el-menu-item>
+        <el-menu-item index="/form/dynamicForm">
+            <i class="el-icon-goods"></i>
+            <span slot="title">表单管理</span>
+        </el-menu-item>
         <el-submenu index="2">
             <template slot="title">
                 <i class="el-icon-menu"></i>

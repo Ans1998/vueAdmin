@@ -20,6 +20,11 @@ export default [
         component: Layout,
         children: [
             {
+                path: '/form/dynamicForm', // 动态表单
+                meta: { auth: true, keepAlive: true },
+                component: resolve => require(['@/views/dynamicForm/'], resolve)
+            },
+            {
                 path: '/', // 首页
                 meta: { auth: true, keepAlive: true },
                 component: resolve => require(['@/views/home/'], resolve)
