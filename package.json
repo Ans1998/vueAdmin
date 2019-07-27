@@ -9,13 +9,11 @@
   },
   "dependencies": {
     "@form-create/element-ui": "^1.0.0",
-    "dot": "^1.1.2",
     "echarts": "^4.1.0",
     "echarts-gl": "^1.1.1",
     "element-ui": "^2.6.1",
     "photo-sphere-viewer": "^3.5.1",
     "three": "^0.102.1",
-    "uevent": "^2.0.0",
     "vue": "^2.6.6",
     "vue-echarts": "^4.0.1",
     "vue-router": "^3.0.2"

@@ -19,6 +19,20 @@
                         title:'商品名称'
                     },
                     {
+                        type:'input',
+                        field:'goods_name_as',
+                        title:'文本名称'
+                    },
+                    {
+                        type: "InputNumber",
+                        field: "price",
+                        title: "价格",
+                        value: 1,
+                        props: {
+                            precision:2
+                        },
+                    },
+                    {
                         type:'datePicker',
                         field:'created_at',
                         title:'创建时间'
