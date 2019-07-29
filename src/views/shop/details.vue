@@ -6,10 +6,12 @@
 <script>
     import * as THREE from 'three';
     import PhotoSphereViewerCompat from 'photo-sphere-viewer'
+    import test from '../../assets/img/PANO_20190729_103659.jpg'
     export default {
         name: "index",
         data() {
             return{
+                img: test
             }
         },
         created() {
@@ -21,7 +23,7 @@
             init() {
                 new PhotoSphereViewerCompat({
                     container : 'photosphere',
-                    panorama : 'https://gw.alicdn.com/tfs/TB1WSInRFXXXXXlXpXXXXXXXXXX-1200-600.jpg'
+                    panorama : this.img
                 })
             }
         }
@@ -32,7 +34,7 @@
     @import "/node_modules/photo-sphere-viewer/dist/photo-sphere-viewer.css";
     #photosphere {
         width: 100%;
-        height: 80vh;
+        height: 60vh;
     }
     .PSViewer {
         overflow: hidden;
