@@ -20,9 +20,19 @@ export default [
         component: Layout,
         children: [
             {
-                path: '/form/dynamicForm', // 动态表单
+                path: '/form/component', // 组件表单
                 meta: { auth: true, keepAlive: true },
-                component: resolve => require(['@/views/dynamicForm/'], resolve)
+                component: resolve => require(['@/views/form/component/'], resolve)
+            },
+            {
+                path: '/form/style', // 样式表单
+                meta: { auth: true, keepAlive: true },
+                component: resolve => require(['@/views/form/style/'], resolve)
+            },
+            {
+                path: '/form/dynamicForm', // 动态表单(组件)
+                meta: { auth: true, keepAlive: true },
+                component: resolve => require(['@/views/form/dynamicForm/'], resolve)
             },
             {
                 path: '/', // 首页
