@@ -16,7 +16,8 @@
     "three": "^0.102.1",
     "vue": "^2.6.6",
     "vue-echarts": "^4.0.1",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "vuedraggable": "^2.23.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",

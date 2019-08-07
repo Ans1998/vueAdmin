@@ -26,7 +26,7 @@
             </el-menu-item-group>
         </el-submenu>
         <el-menu-item index="/order/index">
-            <i class="el-icon-goods"></i>
+            <i class="el-icon-date"></i>
             <span slot="title">订单管理</span>
         </el-menu-item>
 
@@ -44,7 +44,7 @@
         </el-submenu>
         <el-submenu index="3">
             <template slot="title">
-                <i class="el-icon-menu"></i>
+                <i class="el-icon-goods"></i>
                 <span>商品管理</span>
             </template>
             <el-menu-item-group>
@@ -52,6 +52,16 @@
                 <el-menu-item index="/shop/deploy">商品部署</el-menu-item>
                 <el-menu-item index="/shop/specimen">商品样品</el-menu-item>
                 <el-menu-item index="/shop/details">商品详情</el-menu-item>
+            </el-menu-item-group>
+        </el-submenu>
+        <el-submenu index="4">
+            <template slot="title">
+                <i class="el-icon-news"></i>
+                <span>可视化视图管理</span>
+            </template>
+            <el-menu-item-group>
+                <template slot="title">可视化视图功能</template>
+                <el-menu-item index="/visualManagement/my">我的</el-menu-item>
             </el-menu-item-group>
         </el-submenu>
     </el-menu>

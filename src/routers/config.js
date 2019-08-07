@@ -20,6 +20,11 @@ export default [
         component: Layout,
         children: [
             {
+                path: '/visualManagement/my', // 可视化-我的
+                meta: { auth: true, keepAlive: true },
+                component: resolve => require(['@/views/visualManagement/my/'], resolve)
+            },
+            {
                 path: '/form/component', // 组件表单
                 meta: { auth: true, keepAlive: true },
                 component: resolve => require(['@/views/form/component/'], resolve)
