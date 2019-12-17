@@ -49,8 +49,8 @@
             </el-col>
             <el-col :span="16">
 
-                <div style="height: 210px;width: 100%">
-                    <img  style="height: 210px;width: 100%" src="../../../assets/img/my/head.png" alt="">
+                <div style="height: 20%;width: 100%">
+                    <img  style="height: 20%;width: 100%" src="../../../assets/img/my/head.png" alt="">
                 </div>
 
                 <div style="background-color: blue; min-height: 100px;">
@@ -67,8 +67,8 @@
                 </div>
 
 
-                <div style="height: 90px;width: 100%">
-                    <img style="height: 90px;width: 100%" src="../../../assets/img/my/footer.png" alt="">
+                <div style="height: 10%;width: 100%">
+                    <img style="height: 10%;width: 100%" src="../../../assets/img/my/footer.png" alt="">
                 </div>
 
             </el-col>
